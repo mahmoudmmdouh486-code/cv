@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #ccc;
+  font-family: 'Fira Code', monospace;
+  font-size: 18px;
+  line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #1e1e1e;
+  border-left: 4px solid #4ec9b0;
+  overflow: hidden;
+}
+
+.left-panel {
+  flex: 1;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px 40px 40px;
+  min-width: 220px;
+  box-shadow: inset -10px 0 15px -10px #4ec9b0;
+  height: 100vh;
+}
+
+.left-panel img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #4ec9b0;
+  object-fit: contain;
+}
+
+.right-panel {
+  flex: 3;
+  padding: 40px 50px 40px 50px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-size: 18px;
+  line-height: 1.5;
+  word-break: break-word;
+  height: 100vh;
+}
+
+pre {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    border-left: none;
+    border-top: 4px solid #4ec9b0;
+  }
+  .left-panel {
+    min-width: auto;
+    height: 200px;
+    padding: 20px;
+    box-shadow: inset 0 -10px 15px -10px #4ec9b0;
+  }
+  .right-panel {
+    flex: none;
+    height: calc(100vh - 200px);
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .left-panel {
+    height: 150px;
+    padding: 15px;
+  }
+  .right-panel {
+    height: calc(100vh - 150px);
+    padding: 15px;
+    font-size: 14px;
+  }
+}
