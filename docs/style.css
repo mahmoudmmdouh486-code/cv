@@ -84,12 +84,12 @@ pre {
     font-size: 16px;
   }
   .left-panel {
-    height: 150px;
-    padding: 15px;
+    height: 120px;
+    padding: 10px;
   }
   .right-panel {
-    height: calc(100vh - 150px);
-    padding: 15px;
+    height: calc(100vh - 120px);
+    padding: 10px;
     font-size: 16px;
   }
 }
