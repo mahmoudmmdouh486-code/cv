@@ -81,15 +81,16 @@ pre {
 
 @media (max-width: 480px) {
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
   .left-panel {
-    height: 120px;
+    flex: 0 0 120px;
     padding: 10px;
+    min-width: 120px;
   }
   .right-panel {
-    height: calc(100vh - 120px);
+    flex: 1;
     padding: 10px;
-    font-size: 16px;
+    font-size: 12px;
   }
 }

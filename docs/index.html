@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -9,83 +9,158 @@
 <body>
 <div class="container">
   <div class="left-panel">
-    <img src="me3.jpg" alt="Mahmoud Mmdouh" />
+    <img src="../me3.jpg" alt="Mahmoud Mmdouh" />
   </div>
   <div class="right-panel">
-    <div class="cv-content">
-      <h1>Mahmoud Mmdouh - Full Stack Web Developer</h1>
-      <p>4 years university, 2 years freelance. Available IMMEDIATELY.</p>
+    <div class="code-columns">
+      <div class="code-column">
+        <pre><code>
+<span class="comment">// 4 years university, 2 years freelance. Available <span class="keyword">IMMEDIATELY</span>.</span>
+<span class="keyword">public class</span> <span class="class-name">INFORMATION</span>
+{
+    <span class="keyword">public string</span> <span class="property">NAME</span> = <span class="string">"Mahmoud Mmdouh Abdelfattah Mohamed"</span>;
+    <span class="keyword">public string</span> <span class="property">TITLE</span> = <span class="string">"Full Stack Web Developer"</span>;
+    <span class="keyword">public string</span> <span class="property">EMAIL</span> = <span class="string">"mahmoud1mmdouh@icloud.com"</span>;
+    <span class="keyword">public string</span> <span class="property">PHONE</span> = <span class="string">"+20 1141691507"</span>;
+    <span class="keyword">public string[]</span> <span class="property">ADDRESS</span> = { <span class="string">"Shubra El-Kheima"</span>, <span class="string">"Egypt"</span> };
+    <span class="keyword">public bool</span> <span class="property">DRIVING_LICENSE</span> = <span class="boolean">true</span>;
+    <span class="keyword">public int</span> <span class="property">AGE</span> = <span class="number">21</span>;
+}
+        </code></pre>
+      </div>
+      <div class="code-column">
+        <pre><code>
+<span class="keyword">public enum</span> <span class="enum-name">PLATFORMS</span>
+{
+    Windows,
+    Linux
+}
 
-      <h2>Personal Information</h2>
-      <p><strong>Name:</strong> Mahmoud Mmdouh Abdelfattah Mohamed</p>
-      <p><strong>Title:</strong> Full Stack Web Developer</p>
-      <p><strong>Email:</strong> mahmoud1mmdouh@icloud.com</p>
-      <p><strong>Phone:</strong> +20 1141691507</p>
-      <p><strong>Address:</strong> Shubra El-Kheima, Egypt</p>
-      <p><strong>Driving License:</strong> Yes</p>
-      <p><strong>Age:</strong> 21</p>
+<span class="keyword">public enum</span> <span class="enum-name">LANGUAGES</span>
+{
+    C,
+    Cpp,
+    Java,
+    HTML,
+    CSS,
+    Python,
+    PHP
+}
 
-      <h2>Platforms</h2>
-      <p>Windows, Linux</p>
+<span class="keyword">public enum</span> <span class="enum-name">TOOLS</span>
+{
+    MySQL,
+    VisualStudioCode,
+    XAMPP,
+    PostgreSQL,
+    Word,
+    Excel,
+    PowerPoint,
+    Canva
+}
 
-      <h2>Languages</h2>
-      <p>C, C++, Java, HTML, CSS, Python, PHP</p>
+<span class="keyword">public enum</span> <span class="enum-name">SPOKEN_LANGUAGES</span>
+{
+    Arabic_Native,
+    English_Good
+}
+        </code></pre>
+      </div>
+      <div class="code-column">
+        <pre><code>
+<span class="keyword">public partial class</span> <span class="class-name">EDUCATION</span>
+{
+    <span class="keyword">private void</span> <span class="method-name">BenhaUniversity</span>()
+    {
+        <span class="keyword">var</span> <span class="variable">Faculty</span> = <span class="string">"Faculty of Computers and Artificial Intelligence"</span>;
+        <span class="keyword">var</span> <span class="variable">Degree</span> = <span class="string">"Bachelor’s Degree in Scientific Computing"</span>;
+        <span class="keyword">var</span> <span class="variable">Duration</span> = <span class="string">"2022 - 2026"</span>;
+        <span class="keyword">var</span> <span class="variable">Grade</span> = <span class="string">"Good"</span>;
+    }
+}
 
-      <h2>Tools</h2>
-      <p>MySQL, Visual Studio Code, XAMPP, PostgreSQL, Word, Excel, PowerPoint, Canva</p>
+<span class="keyword">public static class</span> <span class="class-name">EXPERIENCE</span>
+{
+    <span class="keyword">public static void</span> <span class="method-name">EgyptAirTrainingAcademy</span>()
+    {
+        <span class="keyword">var</span> <span class="variable">Role</span> = <span class="string">"Trainee"</span>;
+        <span class="keyword">var</span> <span class="variable">Location</span> = <span class="string">"Cairo Airport, Egypt"</span>;
+        <span class="keyword">var</span> <span class="variable">Description</span> = <span class="string">"Part of EgyptAir Holding Company, a modern training facility providing training to personnel locally and internationally."</span>;
+    }
 
-      <h2>Spoken Languages</h2>
-      <p>Arabic (Native), English (Good)</p>
+    <span class="keyword">public static void</span> <span class="method-name">FreelanceWebDeveloper</span>()
+    {
+        <span class="keyword">var</span> <span class="variable">Role</span> = <span class="string">"Freelance Full Stack Web Developer"</span>;
+        <span class="keyword">var</span> <span class="variable">Duration</span> = <span class="string">"2020 - 2022"</span>;
+        <span class="keyword">var</span> <span class="variable">Description</span> = <span class="string">"Developed full-stack web applications using HTML, CSS, JavaScript, PHP, and Python, focusing on responsive design and backend functionality."</span>;
+    }
+}
+        </code></pre>
+      </div>
+      <div class="code-column">
+        <pre><code>
+<span class="keyword">public static class</span> <span class="class-name">CERTIFICATIONS</span>
+{
+    <span class="keyword">public static void</span> <span class="method-name">BigDataAnalysis</span>()
+    {
+        <span class="keyword">var</span> <span class="variable">Institution</span> = <span class="string">"ITIDA & National Telecommunication Institute (NTI)"</span>;
+        <span class="keyword">var</span> <span class="variable">Duration</span> = <span class="string">"Aug 11 - Sep 5, 2024 (120 hours)"</span>;
+        <span class="keyword">var</span> <span class="variable">Topics</span> = new <span class="keyword">string[]</span>
+        {
+            <span class="string">"Big Data Analysis"</span>,
+            <span class="string">"Freelancing & Service Offering"</span>,
+            <span class="string">"Pricing Structure & Project Management"</span>,
+            <span class="string">"Portfolio & Personal Branding"</span>,
+            <span class="string">"Proposal Writing"</span>
+        };
+    }
 
-      <h2>Education</h2>
-      <p><strong>Benha University</strong></p>
-      <p>Faculty: Faculty of Computers and Artificial Intelligence</p>
-      <p>Degree: Bachelor’s Degree in Scientific Computing</p>
-      <p>Duration: 2022 - 2026</p>
-      <p>Grade: Good</p>
+    <span class="keyword">public static void</span> <span class="method-name">FlutterDevelopment</span>()
+    {
+        <span class="keyword">var</span> <span class="variable">Institution</span> = <span class="string">"ITCRC – Faculty of Computers & AI, Benha University"</span>;
+        <span class="keyword">var</span> <span class="variable">Duration</span> = <span class="string">"Aug 15 - Aug 29, 2024"</span>;
+        <span class="keyword">var</span> <span class="variable">Training</span> = <span class="string">"Mobile Development Using Flutter (Level 1)"</span>;
+    }
+}
+        </code></pre>
+      </div>
+      <div class="code-column">
+        <pre><code>
+<span class="keyword">public static class</span> <span class="class-name">PROJECTS</span>
+{
+    <span class="keyword">public static void</span> <span class="method-name">CafeteriaFlask</span>()
+    {
+        <span class="keyword">var</span> <span class="variable">Tech</span> = <span class="string">"Flask, PostgreSQL"</span>;
+        <span class="keyword">var</span> <span class="variable">Description</span> = <span class="string">"A cafeteria management system with user management, product display, order system, and admin dashboard."</span>;
+        <span class="keyword">var</span> <span class="variable">Link</span> = <span class="string">"https://github.com/mahmoudmmdouh486-code/cafeteria-flask"</span>;
+    }
 
-      <h2>Experience</h2>
-      <p><strong>EgyptAir Training Academy</strong></p>
-      <p>Role: Trainee</p>
-      <p>Location: Cairo Airport, Egypt</p>
-      <p>Description: Part of EgyptAir Holding Company, a modern training facility providing training to personnel locally and internationally.</p>
+    <span class="keyword">public static void</span> <span class="method-name">ZawagaRestaurant</span>()
+    {
+        <span class="keyword">var</span> <span class="variable">Tech</span> = <span class="string">"HTML, CSS"</span>;
+        <span class="keyword">var</span> <span class="variable">Description</span> = <span class="string">"A restaurant website featuring menu, about, and contact pages."</span>;
+        <span class="keyword">var</span> <span class="variable">Link</span> = <span class="string">"https://github.com/mahmoudmmdouh486-code/Zawaga-Restaurant"</span>;
+    }
 
-      <p><strong>Freelance Web Developer</strong></p>
-      <p>Role: Freelance Full Stack Web Developer</p>
-      <p>Duration: 2020 - 2022</p>
-      <p>Description: Developed full-stack web applications using HTML, CSS, JavaScript, PHP, and Python, focusing on responsive design and backend functionality.</p>
-
-      <h2>Certifications</h2>
-      <p><strong>Big Data Analysis</strong></p>
-      <p>Institution: ITIDA & National Telecommunication Institute (NTI)</p>
-      <p>Duration: Aug 11 - Sep 5, 2024 (120 hours)</p>
-      <p>Topics: Big Data Analysis, Freelancing & Service Offering, Pricing Structure & Project Management, Portfolio & Personal Branding, Proposal Writing</p>
-
-      <p><strong>Flutter Development</strong></p>
-      <p>Institution: ITCRC – Faculty of Computers & AI, Benha University</p>
-      <p>Duration: Aug 15 - Aug 29, 2024</p>
-      <p>Training: Mobile Development Using Flutter (Level 1)</p>
-
-      <h2>Projects</h2>
-      <p><strong>Cafeteria Flask</strong></p>
-      <p>Tech: Flask, PostgreSQL</p>
-      <p>Description: A cafeteria management system with user management, product display, order system, and admin dashboard.</p>
-      <p>Link: <a href="https://github.com/mahmoudmmdouh486-code/cafeteria-flask">GitHub</a></p>
-
-      <p><strong>Zawaga Restaurant</strong></p>
-      <p>Tech: HTML, CSS</p>
-      <p>Description: A restaurant website featuring menu, about, and contact pages.</p>
-      <p>Link: <a href="https://github.com/mahmoudmmdouh486-code/Zawaga-Restaurant">GitHub</a></p>
-
-      <p><strong>Travel Blog</strong></p>
-      <p>Tech: HTML, CSS, PHP, JavaScript</p>
-      <p>Description: An educational travel blog with destinations, cost table, tips, and newsletter subscription.</p>
-      <p>Link: <a href="https://github.com/mahmoudmmdouh486-code/travel-blog-project">GitHub</a></p>
-
-      <h2>Links</h2>
-      <p><a href="https://linkedin.com/in/mahmoud-mmdouh-a78657371">LinkedIn</a></p>
-      <p><a href="https://github.com/mahmoudmmdouh486-code">GitHub</a></p>
-      <p><a href="https://vercel.com/mahmoudmmdouh486-code">Portfolio</a></p>
+    <span class="keyword">public static void</span> <span class="method-name">TravelBlog</span>()
+    {
+        <span class="keyword">var</span> <span class="variable">Tech</span> = <span class="string">"HTML, CSS, PHP, JavaScript"</span>;
+        <span class="keyword">var</span> <span class="variable">Description</span> = <span class="string">"An educational travel blog with destinations, cost table, tips, and newsletter subscription."</span>;
+        <span class="keyword">var</span> <span class="variable">Link</span> = <span class="string">"https://github.com/mahmoudmmdouh486-code/travel-blog-project"</span>;
+    }
+}
+        </code></pre>
+      </div>
+      <div class="code-column">
+        <pre><code>
+<span class="keyword">public static class</span> <span class="class-name">LINKS</span>
+{
+    <span class="keyword">public static string</span> <span class="property">LinkedIn</span> = <span class="string">"https://linkedin.com/in/mahmoud-mmdouh-a78657371"</span>;
+    <span class="keyword">public static string</span> <span class="property">GitHub</span> = <span class="string">"https://github.com/mahmoudmmdouh486-code"</span>;
+    <span class="keyword">public static string</span> <span class="property">Portfolio</span> = <span class="string">"https://vercel.com/mahmoudmmdouh486-code"</span>;
+}
+        </code></pre>
+      </div>
     </div>
   </div>
 </div>
