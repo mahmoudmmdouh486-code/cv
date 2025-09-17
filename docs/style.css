@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-
 body {
   margin: 0;
   background-color: #121212;
@@ -56,7 +55,32 @@ body {
 
 pre {
   margin: 0;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
 }
+
+.code-column:nth-child(1) pre { animation-delay: 0s; }
+.code-column:nth-child(2) pre { animation-delay: 0.5s; }
+.code-column:nth-child(3) pre { animation-delay: 1s; }
+.code-column:nth-child(4) pre { animation-delay: 1.5s; }
+.code-column:nth-child(5) pre { animation-delay: 2s; }
+.code-column:nth-child(6) pre { animation-delay: 2.5s; }
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Syntax highlighting */
+.keyword { color: #569cd6; }
+.class-name { color: #4ec9b0; }
+.property { color: #9cdcfe; }
+.string { color: #ce9178; }
+.boolean { color: #569cd6; }
+.number { color: #b5cea8; }
+.comment { color: #6a9955; }
+.enum-name { color: #4ec9b0; }
+.variable { color: #9cdcfe; }
+.method-name { color: #dcdcaa; }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
@@ -82,6 +106,7 @@ pre {
 @media (max-width: 480px) {
   body {
     font-size: 14px;
+    color: #ccc;
   }
   .left-panel {
     flex: 0 0 120px;
@@ -93,4 +118,15 @@ pre {
     padding: 10px;
     font-size: 12px;
   }
+  /* Ensure syntax highlighting colors on mobile */
+  .keyword { color: #00aaff !important; }
+  .class-name { color: #00ffaa !important; }
+  .property { color: #aaaaff !important; }
+  .string { color: #ffaa00 !important; }
+  .boolean { color: #00aaff !important; }
+  .number { color: #aaffaa !important; }
+  .comment { color: #88cc88 !important; }
+  .enum-name { color: #00ffaa !important; }
+  .variable { color: #aaaaff !important; }
+  .method-name { color: #ffff00 !important; }
 }

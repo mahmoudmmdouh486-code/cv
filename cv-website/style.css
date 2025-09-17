@@ -41,12 +41,19 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 20px #4ec9b0;
   object-fit: contain;
+  width: 100%;
+  height: auto;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
 }
 
 .right-panel {
   flex: 3;
   padding: 40px 50px 40px 50px;
   overflow-y: auto;
+  overflow-x: hidden;
   white-space: pre-wrap;
   font-size: 18px;
   line-height: 1.5;
@@ -56,7 +63,34 @@ body {
 
 pre {
   margin: 0;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
+
+.code-column:nth-child(1) pre { animation-delay: 0s; }
+.code-column:nth-child(2) pre { animation-delay: 0.5s; }
+.code-column:nth-child(3) pre { animation-delay: 1s; }
+.code-column:nth-child(4) pre { animation-delay: 1.5s; }
+.code-column:nth-child(5) pre { animation-delay: 2s; }
+.code-column:nth-child(6) pre { animation-delay: 2.5s; }
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Syntax highlighting */
+.keyword { color: #569cd6; }
+.class-name { color: #4ec9b0; }
+.property { color: #9cdcfe; }
+.string { color: #ce9178; }
+.boolean { color: #569cd6; }
+.number { color: #b5cea8; }
+.comment { color: #6a9955; }
+.enum-name { color: #4ec9b0; }
+.variable { color: #9cdcfe; }
+.method-name { color: #dcdcaa; }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
@@ -82,14 +116,31 @@ pre {
 @media (max-width: 480px) {
   body {
     font-size: 14px;
+    overflow: auto;
   }
   .left-panel {
     height: 150px;
-    padding: 15px;
+    padding: 10px;
+    display: block;
+  }
+  .left-panel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #4ec9b0;
+    object-fit: contain;
   }
   .right-panel {
     height: calc(100vh - 150px);
-    padding: 15px;
+    padding: 10px;
     font-size: 14px;
+    overflow-x: hidden;
+    max-width: 100vw;
+    box-sizing: border-box;
+    width: 100vw;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-break: break-word;
   }
 }
